@@ -33,6 +33,7 @@
       <ul class="flex space-x-6">
         <li><a href="#home" class="nav-link hover:text-cyan-400">Home</a></li>
         <li><a href="#about" class="nav-link hover:text-cyan-400">About</a></li>
+        <li><a href="#skills" class="nav-link hover:text-cyan-400">Skills</a></li>
         <li><a href="#projects" class="nav-link hover:text-cyan-400">Projects</a></li>
         <li><a href="#contact" class="nav-link hover:text-cyan-400">Contact</a></li>
       </ul>
@@ -49,14 +50,75 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="py-20 max-w-6xl mx-auto px-6" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-6 text-center text-cyan-400">About Me</h2>
-    <p class="text-center max-w-3xl mx-auto mb-6 text-gray-300">
-      Saya adalah seorang fresh graduate Teknik Informatika yang memiliki minat besar dalam bidang Web Development dan UI/UX. 
-      Berpengalaman sebagai IT Support dan pernah mengembangkan sistem berbasis Laravel serta aplikasi deteksi penyakit tanaman dengan CNN. 
-      Saya senang belajar hal baru dan siap beradaptasi di lingkungan kerja profesional.
-    </p>
-  </section>
+<section id="about" class="py-20 max-w-6xl mx-auto px-6" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-10 text-center text-cyan-400">About Me</h2>
+
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Foto -->
+    <div class="flex justify-center">
+      <img src="images/profile.jpg" alt="Tomo Profile" 
+           class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-lg border-4 border-cyan-500">
+    </div>
+
+    <!-- Deskripsi -->
+    <div>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        Saya adalah seorang fresh graduate Teknik Informatika yang memiliki minat besar dalam bidang Web Development 
+        dan UI/UX. Berpengalaman sebagai IT Support dan pernah mengembangkan sistem berbasis Laravel serta aplikasi 
+        deteksi penyakit tanaman dengan CNN.
+      </p>
+      <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+        Saya senang belajar hal baru dan siap beradaptasi di lingkungan kerja profesional. 
+        Keahlian saya mencakup Laravel, Flask, TailwindCSS, PostgreSQL, dan implementasi CNN menggunakan Python.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-20 bg-dark-100 dark:bg-dark-300">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10 text-center text-cyan-400">Skills</h2>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center">
+
+      <!-- Skill Item -->
+      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in">
+        <img src="assets/img/htmlcss.png" alt="HTML" class="w-17 h-16">
+        <span class="text-gray-200 dark:text-gray-100 font-medium">HTML & CSS</span>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/img/JavaScript-logo.png" alt="JavaScript" class="w-16 h-16">
+        <span class="text-gray-200 dark:text-gray-100 font-medium">JavaScript</span>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in" data-aos-delay="150">
+        <img src="assets/img/Laravel.png" alt="Laravel" class="w-16 h-16">
+        <span class="text-gray-200 dark:text-gray-100 font-medium">Laravel</span>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/img/Python_logo_01.svg" alt="Python" class="w-16 h-16">
+        <span class="text-gray-200 dark:text-gray-100 font-medium">Python</span>
+      </div>
+
+
+      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/img/MySQL.png" alt="MySQL" class="w-17 h-16">
+        <span class="text-gray-200 dark:text-gray-100 font-medium">MySQL</span>
+      </div>
+
+
+      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in" data-aos-delay="400">
+        <img src="assets/img/tailwindcss.png" alt="TailwindCSS" class="w-16 h-16">
+        <span class="text-gray-200 dark:text-gray-100 font-medium">TailwindCSS</span>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
  <!-- Projects -->
@@ -101,6 +163,25 @@
             <span class="px-2 py-1 text-xs rounded bg-purple-700 text-white">Python</span>
             <span class="px-2 py-1 text-xs rounded bg-purple-700 text-white">Flask</span>
             <span class="px-2 py-1 text-xs rounded bg-purple-700 text-white">CNN (VGG16)</span>
+          </div>
+
+          <!-- Links -->
+          <div class="mt-4 flex space-x-3">
+            <a href="https://github.com/username/potato-disease-detector" target="_blank" class="text-cyan-400 hover:underline">GitHub</a>
+            <a href="https://demo-potato.com" target="_blank" class="text-cyan-400 hover:underline">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="h-40 bg-gradient-to-r from-purple-900 to-indigo-900 flex items-center justify-center text-gray-200 font-bold text-2xl">Flask + CNN</div>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-cyan-400">Comming SOON</h3>
+          <p class="text-gray-400 mt-2">On Progress</p>
+          
+          <!-- Tech Stack -->
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-xs rounded bg-purple-700 text-white"></span>
           </div>
 
           <!-- Links -->
