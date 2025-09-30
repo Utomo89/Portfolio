@@ -58,12 +58,14 @@
     </p>
   </section>
 
-  <!-- Projects -->
-  <!-- Projects -->
+
+ <!-- Projects -->
 <section id="projects" class="py-20 bg-dark-100">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl font-bold mb-10 text-center text-cyan-400">Projects</h2>
-    <div class="grid md:grid-cols-3 gap-6">
+
+    <!-- Project List -->
+    <div id="projectList" class="grid md:grid-cols-3 gap-6">
       
       <!-- Project 1 -->
       <div class="project-card" data-aos="zoom-in">
@@ -108,32 +110,15 @@
           </div>
         </div>
       </div>
-
-      <!-- Project 3 -->
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-        <div class="h-40 bg-gradient-to-r from-blue-900 to-cyan-900 flex items-center justify-center text-gray-200 font-bold text-2xl">Laravel 12</div>
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-cyan-400">Manajemen Lahan Parkir</h3>
-          <p class="text-gray-400 mt-2">Website pengelolaan lahan parkir tol flat warga Bebekan berbasis Laravel 12 dan MySQL.</p>
-          
-          <!-- Tech Stack -->
-          <div class="mt-3 flex flex-wrap gap-2">
-            <span class="px-2 py-1 text-xs rounded bg-blue-700 text-white">Laravel 12</span>
-            <span class="px-2 py-1 text-xs rounded bg-blue-700 text-white">MySQL</span>
-            <span class="px-2 py-1 text-xs rounded bg-blue-700 text-white">RBAC</span>
-          </div>
-
-          <!-- Links -->
-          <div class="mt-4 flex space-x-3">
-            <a href="https://github.com/username/parkir-management" target="_blank" class="text-cyan-400 hover:underline">GitHub</a>
-            <a href="https://demo-parkir.com" target="_blank" class="text-cyan-400 hover:underline">Live Demo</a>
-          </div>
-        </div>
-      </div>
+ 
 
     </div>
+
+    <!-- Pagination -->
+    <div id="pagination" class="flex justify-center items-center mt-10 space-x-2"></div>
   </div>
 </section>
+
 
 
   <!-- Contact -->
