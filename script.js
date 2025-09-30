@@ -101,6 +101,3 @@ function renderPagination() {
 if (projects.length > perPage) {
   renderProjects();
 }
-if (projects.length > perPage) {
-  renderProjects();
-}
