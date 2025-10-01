@@ -27,98 +27,98 @@
 <body class="bg-dark-200 text-gray-200 transition-colors duration-300">
 
   <!-- Navbar -->
-  <nav id="navbar" class="bg-dark-100/80 backdrop-blur-md shadow-md fixed w-full top-0 z-50 transition-all duration-300">
-    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
-      <div class="font-bold text-xl text-cyan-400">Tomo</div>
-      <ul class="flex space-x-6">
-        <li><a href="#home" class="nav-link hover:text-cyan-400">Home</a></li>
-        <li><a href="#about" class="nav-link hover:text-cyan-400">About</a></li>
-        <li><a href="#skills" class="nav-link hover:text-cyan-400">Skills</a></li>
-        <li><a href="#projects" class="nav-link hover:text-cyan-400">Projects</a></li>
-        <li><a href="#contact" class="nav-link hover:text-cyan-400">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<nav id="navbar" class="bg-dark-100/80 backdrop-blur-md shadow-md fixed w-full top-0 z-50 transition-all duration-300">
+  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+    
+    <!-- Logo -->
+    <div class="font-bold text-xl text-cyan-400">Prasetyo Tri Utomo</div>
+    
+    <!-- Menu -->
+    <ul id="navMenu" class="hidden md:flex space-x-6">
+      <li><a href="#home" class="nav-link hover:text-cyan-400">Home</a></li>
+      <li><a href="#about" class="nav-link hover:text-cyan-400">About</a></li>
+      <li><a href="#skills" class="nav-link hover:text-cyan-400">Skills</a></li>
+      <li><a href="#projects" class="nav-link hover:text-cyan-400">Projects</a></li>
+      <li><a href="#contact" class="nav-link hover:text-cyan-400">Contact</a></li>
+    </ul>
 
-  <!-- Hero -->
-  <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-br from-dark-300 via-dark-200 to-cyan-900 text-white relative overflow-hidden">
-    <div class="text-center relative z-10" data-aos="fade-up">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Tomo <span class="inline-block animate-bounce">👋</span></h1>
-      <p class="text-lg md:text-2xl mb-6 text-cyan-200">Fresh Graduate | Web Developer | UI/UX Enthusiast</p>
-      <a href="#contact" class="bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">Contact Me</a>
+    <!-- Toggle & Mobile Menu -->
+    <div class="flex items-center space-x-4">
+      <!-- Hamburger -->
+      <button id="menuToggle" class="md:hidden text-cyan-400 text-2xl focus:outline-none">☰</button>
     </div>
-  </section>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden flex-col bg-dark-200 text-center py-4 space-y-4">
+    <a href="#home" class="block hover:text-cyan-400">Home</a>
+    <a href="#about" class="block hover:text-cyan-400">About</a>
+    <a href="#skills" class="block hover:text-cyan-400">Skills</a>
+    <a href="#projects" class="block hover:text-cyan-400">Projects</a>
+    <a href="#contact" class="block hover:text-cyan-400">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center px-6
+  bg-gradient-to-br from-dark-300 via-dark-200 to-cyan-900 text-white relative overflow-hidden">
+  <div class="relative z-10" data-aos="fade-up">
+    <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
+      Hi, I'm Prasetyo Tri Utomo <span class="inline-block animate-bounce">👋</span>
+    </h1>
+    <p class="text-base sm:text-lg md:text-2xl mb-6 text-cyan-200">
+      Fresh Graduate | Web Developer | UI/UX and AI Enthusiast
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#contact" class="bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-700 transition-all transform hover:-translate-y-1 shadow-lg">Contact Me</a>
+      <a href="https://drive.google.com/file/d/1Y73A66TmopQQGE_6o8Lqtz30hNGreuaj/view?usp=sharing" download class="bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-700 transition-all transform hover:-translate-y-1 shadow-lg">Download CV</a>
+    </div>
+  </div>
+</section>
 
   <!-- About -->
 <section id="about" class="py-20 max-w-6xl mx-auto px-6" data-aos="fade-up">
   <h2 class="text-3xl font-bold mb-10 text-center text-cyan-400">About Me</h2>
-
   <div class="grid md:grid-cols-2 gap-10 items-center">
-    
-    <!-- Foto -->
     <div class="flex justify-center">
-      <img src="images/profile.jpg" alt="Tomo Profile" 
-           class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-lg border-4 border-cyan-500">
+      <img src="assets/img/profile.jpg" alt="Profile" class="w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 rounded-2xl shadow-lg object-cover border-4 border-cyan-500">
     </div>
-
-    <!-- Deskripsi -->
     <div>
-      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-        Saya adalah seorang fresh graduate Teknik Informatika yang memiliki minat besar dalam bidang Web Development 
-        dan UI/UX. Berpengalaman sebagai IT Support dan pernah mengembangkan sistem berbasis Laravel serta aplikasi 
-        deteksi penyakit tanaman dengan CNN.
-      </p>
-      <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-        Saya senang belajar hal baru dan siap beradaptasi di lingkungan kerja profesional. 
-        Keahlian saya mencakup Laravel, Flask, TailwindCSS, PostgreSQL, dan implementasi CNN menggunakan Python.
+      <p class="text-gray-300 mb-6 text-justify">
+       I am an Informatics Engineering fresh graduate with a strong interest in Web Development and UI/UX. I have experience as an IT Support and have developed a Laravel-based system as well as a plant disease detection application using CNN. I enjoy learning new things and am ready to adapt in a professional work environment.
       </p>
     </div>
   </div>
 </section>
+
 
 <!-- Skills -->
 <section id="skills" class="py-20 bg-dark-100 dark:bg-dark-300">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl font-bold mb-10 text-center text-cyan-400">Skills</h2>
-
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center">
-
-      <!-- Skill Item -->
-      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in">
-        <img src="assets/img/htmlcss.png" alt="HTML" class="w-17 h-16">
-        <span class="text-gray-200 dark:text-gray-100 font-medium">HTML & CSS</span>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+      <div class="p-4 bg-dark-200 rounded-xl shadow-lg hover:scale-105 transition-transform">
+        <img src="assets/img/htmlcss.png" alt="HTML" class="w-13 h-12 mx-auto mb-2">
+        <p>HTML & CSS</p>
       </div>
-
-      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in" data-aos-delay="100">
-        <img src="assets/img/JavaScript-logo.png" alt="JavaScript" class="w-16 h-16">
-        <span class="text-gray-200 dark:text-gray-100 font-medium">JavaScript</span>
+      <div class="p-4 bg-dark-200 rounded-xl shadow-lg hover:scale-105 transition-transform">
+        <img src="assets/img/Laravel.png
+        " alt="CSS" class="w-12 h-12 mx-auto mb-2">
+        <p>Laravel</p>
       </div>
-
-      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in" data-aos-delay="150">
-        <img src="assets/img/Laravel.png" alt="Laravel" class="w-16 h-16">
-        <span class="text-gray-200 dark:text-gray-100 font-medium">Laravel</span>
+      <div class="p-4 bg-dark-200 rounded-xl shadow-lg hover:scale-105 transition-transform">
+        <img src="assets/img/tailwindcss.png" alt="Tailwind" class="w-12 h-12 mx-auto mb-2">
+        <p>Tailwind</p>
       </div>
-
-      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in" data-aos-delay="200">
-        <img src="assets/img/Python_logo_01.svg" alt="Python" class="w-16 h-16">
-        <span class="text-gray-200 dark:text-gray-100 font-medium">Python</span>
+      <div class="p-4 bg-dark-200 rounded-xl shadow-lg hover:scale-105 transition-transform">
+        <img src="assets/img/JavaScript-logo.png" alt="JavaScript" class="w-12 h-12 mx-auto mb-2">
+        <p>JavaScript</p>
       </div>
-
-
-      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in" data-aos-delay="300">
-        <img src="assets/img/MySQL.png" alt="MySQL" class="w-17 h-16">
-        <span class="text-gray-200 dark:text-gray-100 font-medium">MySQL</span>
-      </div>
-
-
-      <div class="flex flex-col items-center space-y-3" data-aos="zoom-in" data-aos-delay="400">
-        <img src="assets/img/tailwindcss.png" alt="TailwindCSS" class="w-16 h-16">
-        <span class="text-gray-200 dark:text-gray-100 font-medium">TailwindCSS</span>
-      </div>
-
+      <!-- Tambahkan skill lain... -->
     </div>
   </div>
 </section>
+
 
 
  <!-- Projects -->
